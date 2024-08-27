@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utility.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+<body>
+  <div class="container flex bg-black">
+    <div class="left">
+      <div class="close">
+        <img class="invert" src="img/cross.svg">
+      </div>
+      <div class="home bg-grey bg-radius m-1 p-1">
+        <div class="logo">
+          <img width="110" class="invert" src="img/spotify.svg">
+        </div>
+        <ul>
+          <li><img class="invert" src="img/home.svg" alt="Home">Home</li>
+          <li><img class="invert" src="img/search.svg" alt="Search">Search</li>
+        </ul>
+      </div>
+      <div class="library bg-grey bg-radius m-1 p-1">
+        <div class="heading">
+          <img class="invert" src="img/library.svg" alt="mylibrary">
+          <p>Your Library</p>
+          <i class="fa-solid fa-plus addbutton"></i>
+        </div>
+        <div class="songlist">
+          <ul>
+            <!-- <li>
+              <img class="invert" src="music.svg" alt="music">
+              <div class="info">
+                <div>Song Name</div>
+                <div>Song artist</div>
+              </div>
+              <div class="playnow">
+                <span>Play now</span>
+                <img class="invert "src="play2.svg" alt="play">
+              </div>
+            </li> -->
+          </ul>
+        </div>
+        <div class="footer p-1">  
+          <div>
+            <a href="https://www.spotify.com/in-en/legal/"><span>Legal</span></a>
+          </div>
+          <div>
+            <a href="https://www.spotify.com/in-en/safetyandprivacy/"><span>Safety &amp; Privacy Center</span></a>
+          </div>
+          <div>
+            <a href="https://www.spotify.com/in-en/legal/privacy-policy/"><span>Privacy Policy</span></a>
+          </div>
+          <div>
+            <a href="https://www.spotify.com/in-en/legal/cookies-policy/"><span>Cookies</span></a>
+          </div>
+          <div>
+            <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3"><span>About Ads</span></a>
+          </div>
+          <div>
+            <a href="https://www.spotify.com/in-en/accessibility/"><span>Accessibility</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="right bg-radius">
+      <div class="header">
+        <div class="nav">
+          <div class="flex" style="gap: 12px;">
+            <img class="invert hamburger" src="img/hamburger.svg">
+            <div class="left1">
+              <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="right1">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+        </div> 
+        <div class="buttons" >
+          <button class="signup">Sign Up</button>
+          <button class="login">Log In</button>
+        </div>
+      </div>
+      <div class="playarea">
+
+        <div class="spotifyplaylists">
+          <h3>Spotify Playlists</h3>
+          <div class="cardcontainers">
+            <div class="card">
+              <div class="play">
+                <img src="img/play.svg" alt="playbutton">
+              </div>
+              <img src="img/lofi sleep.jpeg" alt="lofi sleep image">
+              <h3>Lofi sleep</h3>
+              <p>Instrumental beats for a restful night's sleep</p>
+            </div>
+            <div class="card">
+              <div class="play">
+                <img src="img/play.svg" alt="playbutton">
+              </div>
+              <img src="img/night rain.jpeg" alt="night rain image">
+              <h3>Night rain</h3>
+              <p>Sleep with sounds of pouring rain and occasional rolling thunder</p>
+            </div>
+            <div class="card">
+              <div class="play">
+                <img src="img/play.svg" alt="playbutton">
+              </div>
+              <img src="img/animal.jpeg" alt="animal image">
+              <h3>Animal</h3>
+              <p>Manan Bhardwaj , Vishal Mishra , Jaani</p>
+            </div>
+            <div class="card">
+              <div class="play">
+                <img src="img/play.svg" alt="playbutton">
+              </div>
+              <img src="img/ashiqui.jpeg" alt="ashiqui image">
+              <h3>Aashiqui 2</h3>
+              <p>Mithoon , Ankit Tiwari , Jeet Ganguli</p>
+            </div>
+            <div class="card">
+              <div class="play">
+                <img src="img/play.svg" alt="playbutton">
+              </div>
+              <img src="img/love hotel.jpeg" alt="love hotel image">
+              <h3>love hotel</h3>
+              <p>left over max</p>
+            </div>
+          </div>
+        </div>
+        
+      
+        <div class="playsong">
+          <div class="seekbar">
+            <div class="circle"></div>
+          </div>
+          <div class="playinfo">
+            <div class="songinfo">
+
+            </div>
+            <div class="playbuttons">
+              <img id="previous" src="img/prevsong.svg" alt="previous song">
+              <img id="play" src="img/playsong.svg" alt="play song">
+              <img id="next" src="img/nextsong.svg" alt="next song">
+            </div>
+            <div class="timevol">
+              <div class="songtime">
+  
+              </div>
+              <div class="volume">
+                <img src="img/volume.svg" alt="volume">
+                <div class="range">
+                  <input type="range" name="volume" id="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>
