@@ -1,0 +1,384 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+
+body{
+ background-color: black;
+ color: white; 
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Flex", sans-serif;
+}
+.left{
+    width: 25vw;
+    padding: 7px;
+}
+.close{
+    display: none;
+}
+
+.home ul li{
+    list-style: none;
+    width: 15px;
+    display: flex;
+    gap: 13px;
+    padding-top: 14px;
+}
+.heading {
+    display: flex;
+    width: 100%;
+    gap: 13px;
+    padding-top: 14px;
+    padding: 23px 7px;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+}
+.heading img{
+    width: 20px;
+}
+.library{
+    min-height: 80vh;
+    position: relative;
+}
+.addbutton{
+    color: white;
+    padding-left: 160px;
+    display: block;
+    padding-top: 8px;
+    padding-right: 24px;
+    position: absolute;
+    right: 0;
+}
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    font-size: 13px;
+    position: absolute;
+    bottom: 0;
+}
+.footer a{
+    color: grey;
+    font-weight: 300;
+    text-decoration: none;
+}
+.right{
+    width: 75vw;
+    position: relative;
+    margin-top: 14px;
+    margin-right: 7px;
+    margin-bottom: 15px;
+    background-color: #1d1d1d;
+    min-height: 80vh;
+    padding-top : 7px;
+    padding-bottom: 7px;
+}
+.header{
+    display: flex;
+    height: 60px;
+    background-color: #101010;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    justify-content: space-between;
+}
+.header > *{
+    padding: 16px;
+}
+.nav{
+    display: flex;
+    gap: 10px;
+}
+.hamburger{
+    display: none;
+}
+.left1{
+    display: flex;
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    background-color: rgb(11, 11, 11);
+    align-items: center;
+    justify-content: space-around;
+    color: #ffffff;
+    font-weight: 100;
+}
+.right1{
+    display: flex;
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    background-color: rgb(11, 11, 11);;
+    align-items: center;
+    justify-content: space-around;
+    color: #ffffff;
+}
+.buttons{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.signup{
+    background-color: #101010;
+    border: none;
+    color: #a7a7a7;
+    font-weight: 700;
+    font-size: 16px;
+}
+.signup:hover{
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+}
+.login{
+    border-radius: 16px 16px 16px 16px;
+    font-size: 16px;
+    height: 42px;
+    width: 70px;
+    cursor: pointer;
+}
+.login:hover{
+    background-color: #f6f6f6;
+    font-size: 17px;
+    font-weight: 500;
+}
+.playarea{
+    background-color: #1d1d1d;
+}
+.spotifyplaylists{
+    padding-top: 20px;
+    padding-left: 14px;
+    
+}
+.cardcontainers{
+    max-height: 70vh;
+    overflow-y: scroll;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+ .card{
+    width: 190px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #252525;
+    position: relative;
+    transition: background-color 1s;
+}
+.card > *{
+    padding-top: 10px;
+}
+.card img{
+    width: 100%;
+    object-fit: contain;
+}
+.card p{
+    
+color:rgba(255, 255, 255, 0.7);
+font-size: 14px;
+font-weight: 400;
+}
+.card h3{
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+}
+/* .spotifyplaylists .card2{
+    width: 190px;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+
+} */
+/* .card2 img{
+    border-radius: 50%;
+    width: 100%;
+    object-fit: contain;
+}
+.card2 p{
+    
+    color:rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    font-weight: 400;
+} */
+/* .card2 h3{
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+}
+.card2 > *{
+    padding-top: 10px;
+} */
+.play{
+    position: absolute;
+    right: 19px;
+    top: 156px;
+    opacity: 0;
+    transition: opacity 1s , top 1s;
+}
+.card:hover .play{
+    opacity: 1;
+    top: 150px;
+}
+.card:hover{
+    background-color: #413f3f;;
+}
+/* .card2:hover .play{
+    opacity: 1;
+    top: 150px;
+} */
+.playsong{
+    position: fixed;
+    bottom: 15px;
+    filter: invert(1);
+    /* since we have applied filter function now to get he required color i have subtracted the values of required color from 255 */
+    background-color: rgba(236, 215, 217, 0.88);
+    border-radius: 10px;
+    padding: 10px;
+    width: 70vw;
+    max-width: 90%;
+    margin: 5px;
+    cursor: pointer;
+    min-height: 40px;
+    
+}
+.seekbar{
+    width: 98%;
+    background-color: white;
+    height: 2px;
+    border: 2px solid rgb(132, 130, 130);
+    position: absolute;
+    bottom: 0;
+    border-radius: 40px;
+    cursor: pointer;
+}
+.playbuttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+.timevol{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+.volume{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.songlist{
+    height: 644px;
+    overflow: auto;
+    margin-bottom: 50px;
+}
+.songlist ul{
+    padding: 0 12px;
+}
+.songlist ul li{
+    list-style-type: decimal;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    padding: 5px ;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+.songlist .info{
+    font-size: 10px;
+    width: 344px;
+}
+.playnow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 0;   
+}
+.playinfo{
+    display: flex;
+    justify-content: space-around;
+    color: #101010;
+    margin: 3px 0;
+}
+.playnow span{
+    width: 64px;
+    font-size: 12px; 
+}
+.circle{
+    height: 13px;
+    width: 13px;
+    border-radius: 13px;
+    background-color: #1d1d1d;
+    position: relative;
+    bottom: 6px;
+    left: 0%;
+    transition: left 0.5s;  
+    /* here we have applied transition so that our circle moves smoothly */
+    
+}
+
+@media only screen and (max-width: 1200px) {
+    .left{
+        position: absolute;
+        left: -120%;
+        z-index: 3;
+        width: 370px;
+        padding: 0;
+    }
+    .left .close{
+        display: block;
+        position: absolute;
+        right: 50px;
+        top: 23px;
+        width: 23px;
+    }
+    .right{
+        width:100vw;
+    }
+    .playsong{
+        width: calc(100vw - 41px);
+          /*this calc funtion will show an error if we dont use space between the elements  */
+        /* margin-left: 15px; */
+        /* height: 138px; */
+    }
+    .playinfo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-size: 14px;
+        gap: 10px;
+    }
+    .seekbar{
+        width: calc(100vw - 53px);
+    }
+    .volume,.timevol{
+        flex-direction: column;
+    }
+    .hamburger{
+        display: block;
+    }
+    .card,.card2{
+        width: 90vw;
+    }
+    .cardcontainers{
+        justify-content: center;
+    }
+  }
+
+
+
+
+
